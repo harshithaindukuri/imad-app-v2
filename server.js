@@ -19,7 +19,7 @@ app.get('article one ' ,function(req,res)
 });
 app.get('article two ' ,function(req,res)
 {
-    res.send("artice two has been called it will be served here");
+    res.send('artice two has been called it will be served here');
 });
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
