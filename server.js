@@ -13,7 +13,7 @@ var articles ={
      article3:{
     title:"article 3",
     content:"this is third",
-},
+}
 };  
 function createTemp(data){
 var title=data.title;
