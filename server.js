@@ -16,7 +16,7 @@ var articles ={
     content:"this is third",
 },
 };  
-var createTemp = function(data){
+function createTemp(data){
 var title=data.title;
 var content=data.content;
 var htmltemp=`<!Doctype html>
@@ -38,7 +38,7 @@ var htmltemp=`<!Doctype html>
 </html>  
 `;
 return htmltemp;
-};
+}
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
