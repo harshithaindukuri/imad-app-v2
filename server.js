@@ -3,12 +3,19 @@ var morgan = require('morgan');
 var path = require('path');
 
 var app = express();
+app.use(morgan('combined'));
 var articles ={
-    var article1={
+    article1:{
     title:"article one",
-    content:"this is first",
-}
-
+    content:"this is first",},
+     article2:{
+    title:"article 2",
+    content:"this is second",},
+     article3:{
+    title:"article 3",
+    content:"this is third",
+},
+};  
 var createTemp = function(data){
 var title=data.title;
 var content=data.content;
@@ -30,17 +37,15 @@ var htmltemp=`<!Doctype html>
     </body>
 </html>  
 `;
-return 
-}
-
-app.use(morgan('combined'));
+return htmltemp;
+};
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/article2', function (req, res) {
-  res.send(createTemp(article2));
+app.get('/:articleName', function (req, res) {
+  res.send(createTemp(articles[articleName]));
 });
 
 app.get('/ui/style.css', function (req, res) {
