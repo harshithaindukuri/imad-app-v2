@@ -24,14 +24,12 @@ var htmltemp=`<!Doctype html>
    <meta name="viewport" content="width=device-width initial-scale=1"/>
  <link href ="/ui/style.css" rel ="stylesheet"/>
    <body>
-      <div class = container>
+       <div>
          <a href='/'>home</a>   
-        
-       hello this is body
+        </div>
        <div>
           ${content}
        </div>
-      </div> 
     </body>
 </html>  
 `;
