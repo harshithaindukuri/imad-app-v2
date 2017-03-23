@@ -1,7 +1,6 @@
 var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
-var articleName;
 var app = express();
 app.use(morgan('combined'));
 var articles ={
@@ -45,6 +44,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/:articleName', function (req, res) {
+    var articleName =req.params.articleName;
   res.send(createTemp(articles[articleName]));
 });
 
