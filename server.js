@@ -25,14 +25,13 @@ var htmltemp=`<!Doctype html>
  <link href ="/ui/style.css" rel ="stylesheet"/>
    <body>
       <div class = container>
-       <div>
          <a href='/'>home</a>   
-        </div> class = container
+        
        hello this is body
        <div>
           ${content}
        </div>
-     </div>  
+      </div> 
     </body>
 </html>  
 `;
