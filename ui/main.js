@@ -1,5 +1,5 @@
 console.log('Loaded!');
-var v = document.getElementById(i);
+var v = document.getElementById('i');
 function onClick(){
-  img.style.margin_left="20px";  
+  v.style.margin_left="200px";  
 }
