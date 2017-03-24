@@ -37,6 +37,10 @@ var htmltemp=`<!Doctype html>
 `;
 return htmltemp;
 }
+app.get('/counter',function(req,res){
+   count++;
+   res.send(count.toString());
+});
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
