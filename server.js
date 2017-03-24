@@ -23,6 +23,8 @@ var htmltemp=`<!Doctype html>
    <title> ${title} </title>
    <meta name="viewport" content="width=device-width initial-scale=1"/>
  <link href ="/ui/style.css" rel ="stylesheet"/>
+    <link aref = "/ui/style.css" rel ="stylesheet"/> 
+     
    <body>
        <div>
          <a href='/'>home</a>   
