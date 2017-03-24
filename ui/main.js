@@ -1,12 +1,11 @@
 console.log('Loaded!');
-var v = document.getElementById('image');
-var move=0;
-var moveRight = function(){
-    move=move+1;
-    v.style.marginLeft=move;
+var button = document.getElemntByid("b");
+var counter=0;
+button.onclick=function(){
+ 
+ 
+counter=counter+1;
+var span = document.getElemnetById("count");
+span.innerHTML=counter.toString();
 };
-v.onclick = function(){
-  
-  var interval = setInterval(moveRight,100);
-  
-};
+
