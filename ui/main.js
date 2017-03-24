@@ -1,7 +1,9 @@
 console.log('Loaded!');
 var v = document.getElementById('image');
+var move;
 function mr(){
- v.style.marginLeft=marginLeft+10;   
+ move=move+10;    
+ v.style.marginLeft=move;   
 }
 v.onclick = function(){
   
